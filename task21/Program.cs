@@ -1,6 +1,5 @@
 ﻿// Напишите программу, которая принимает на вход координаты двух точек 
 // и находит расстояние между ними в 2D пространстве.
-
 // A (3,6); B (2,1) -> 5,09 
 // A (7,-5); B (1,-1) -> 7,21
 
@@ -17,9 +16,10 @@ Dist (x1, y1, x2, y2);
 
 void Dist (int x1, int y1, int x2, int y2)
 {
-    double dist = Math.Sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)); // d = √ [(x2-x1)2+ (y2-y1)2 ] , Где  (x1,y1) и (x2,y2)
+    double dist = Math.Sqrt((x2-x1)*(x2-x1)+(y2-y1)*(y2-y1)); 
+// d = √ [(x2-x1)2+ (y2-y1)2 ] , Где  (x1,y1) и (x2,y2)
 
-    Console.WriteLine($"Растояние между точками равно: {Math.Round(dist,4)}");
+    Console.WriteLine($"Растояние между точками равно: {Math.Round(dist,2)}");
 }
 
 int Prompt(string message)
