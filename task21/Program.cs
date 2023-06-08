@@ -25,6 +25,6 @@ void Dist (int x1, int y1, int x2, int y2)
 int Prompt(string message)
 {
     Console.Write(message);
-    int num = int.Parse(Console.ReadLine());
+    int num = int.Parse(Console.ReadLine()!);
     return num;
 }
